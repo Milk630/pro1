@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta name="renderer" content="webkit" />
+<title>华为帐号-登录</title>
+
+<style type="text/css">
+	#box{
+		width: 380px;
+		border: 1px solid #ccc;
+		top: 50px;
+		left: 35%;
+		cursor: move;
+		position: absolute;
+		 
+	}
+</style>
+
+<script type="text/javascript">var pageToken = "9b719ec5bf8638d71aec8ec83a26a475f385ca03ba3237aa6982a92c53682af5";var isOpenCasPageStat = "true";</script><script type="text/javascript">
+
+</script>
+
+
+<script type="text/javascript"  src="jquery-1.11.0.min.js.下载"></script>
+<script>
+	$(function(){$(document).mousemove(function(e){if(!!this.move){var posix=!document.move_target?{'x':0,'y':0}:document.move_target.posix,callback=document.call_down||function(){$(this.move_target).css({'top':e.pageY-posix.y,'left':e.pageX-posix.x});};callback.call(this,e,posix);}}).mouseup(function(e){if(!!this.move){var callback=document.call_up||function(){};callback.call(this,e);$.extend(this,{'move':false,'move_target':null,'call_down':false,'call_up':false});}});var $box=$('#box').mousedown(function(e){var offset=$(this).offset();this.posix={'x':e.pageX-offset.left,'y':e.pageY-offset.top};$.extend(document,{'move':true,'move_target':this});}).on('mousedown','#coor',function(e){var posix={'w':$box.width(),'h':$box.height(),'x':e.pageX,'y':e.pageY};$.extend(document,{'move':true,'call_down':function(e){$box.css({'width':Math.max(30,e.pageX-posix.x+posix.w),'height':Math.max(30,e.pageY-posix.y+posix.h)});}});return false;});});
+</script>
+
+
+<link href="https://id1.cloud.huawei.com/CAS/up/idmw_rss_38/logos/icons/huawei.ico" type="image/x-icon" rel="shortcut icon" /> 
+
+<link rel="stylesheet" type="text/css" href="../../../网站/注册_华为帐号_files/common.css"/>
+
+<link href="https://id1.cloud.huawei.com/CAS/up/idmw_rss_38/css/portal/common_rss/css/common.css?cas20190704" rel="stylesheet" type="text/css">
+
+<link href="https://id1.cloud.huawei.com/CAS/up/idmw_rss_38/css/common/css/dialog.css?cas20190704" rel="stylesheet" type="text/css">
+
+<link href="https://id1.cloud.huawei.com/CAS/up/idmw_rss_38/css/portal/vmall_rss/loginEMUIV6/dialogEMUIV6.css?cas20190704" rel="stylesheet" type="text/css">
+
+<link href="https://id1.cloud.huawei.com/CAS/up/idmw_rss_38/css/portal/vmall_rss/loginEMUIV6/common.css?cas20190704" rel="stylesheet" type="text/css">
+
+
+<link href="https://id1.cloud.huawei.com/CAS/up/idmw_rss_38/css/portal/vmall_rss/loginEMUIV6/i18n_css/zh-cn.css?cas20190704" rel="stylesheet" type="text/css"> 
+
+
+<script type="text/javascript">var localHttps="https://id1.cloud.huawei.com/CAS";var currentSiteID="1";var webAppName="CAS";var localHttps_AMW="https://id1.cloud.huawei.com/AMW";var languageCode="zh-cn";var resourse_js_img_css_webUrl="https://id1.cloud.huawei.com/CAS/up/idmw_rss_38";</script>
+
+
+<script src="https://id1.cloud.huawei.com/CAS/up/idmw_rss_38/js/language/zh-cn.js?cas20190704"></script>
+
+<script src="https://id1.cloud.huawei.com/CAS/up/idmw_rss_38/js/compress/_portal_includes_loginEMUI6Rss.js?cas20190704" type="text/javascript"></script>
+
+
+</head>
+<body class="login themeName-red" style="background-color:#ffffff;min-width:0px;">
+	<div id="cookies_privacy" class="center cookie hidden">
+		本站点使用cookies,继续浏览表示您同意我们使用cookies。
+		<a class="cookie-pro" href="#">Cookies和隐私政策></a>
+		<img src="https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;CAS&#x2f;up&#x2f;idmw_rss_38&#x2f;css&#x2f;portal&#x2f;common_rss&#x2f;images&#x2f;cookie-close.png&#x3f;cas20190704"/>
+	</div>
+	<div class="g" style="width:380px;" id="box">
+		<!--登录3 -->
+		<div class="login-div userAccountLogin containCollapseFix" id="loginform">
+			<div class="h">
+
+						<span class="loginTitle actived loginTitle-left" data-type="account">帐号登录</span><span class="loginTitle splitLine loginTitle-right" data-type="qrCode">扫码登录</span>
+	
+			</div>
+			
+				<div class="b b-account">
+					<div class="login-form-marginTop">
+						<div class="form-edit-area loginEventForm">
+							<div class="userAccountLogin-errorTipsDiv"></div>
+							<table class="table-style" border="0" cellpadding="0" cellspacing="0">
+								<tbody>
+									<tr>
+										<td class="user-input-tr"><input type="text" autocomplete="off"  class="text vam" id="login_userName" name="userAccount" maxlength="50" tabindex="1" /></td>
+									</tr>
+									
+									<tr>
+										<td class="user-input-tr"><input oncut="return false;" oncopy="return false" id="login_password" type="password" autocomplete="off"  class="text vam" name="password" maxlength="32" tabindex="2" /></td>
+									</tr>
+									<tr>
+										<td id="picAuthCode" class="verify-td referenceTarget">
+											  
+										</td>
+									</tr>
+									<tr>
+										<td class="mt-links lineHeightFix" id="operLinkTd">
+											<span id="smsLoginEntrance" class="changeLoginType l" data-type="userAccountLogin" title="短信验证码登录"><i class="phoneIcon marginR6"></i>短信验证码登录</span>
+										</td>
+									</tr>
+									
+									<tr>
+										<td >
+											<div><span class="vam error" id="login_msg"  style="display:block"></span></div>
+											<div class="button-login-red button-login" id="btnLogin" data-type="accountLogin" tabindex="5">登录</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="mt-checkbox">
+											<span id="rememberNameSpan"><input type="checkbox" class="checkbox vam" id="remember_name" name="remember_name" tabindex="4" /><label for="remember_name"><i id="remember_name_icon" class="checkBox-icon tick-off-icon marginR6"></i>记住华为帐号</label></span>
+											<div class="hidden remeberTip"></div>
+											<span class="mt-links-float r clearWidth floatFix referenceTarget_login_more">
+												<a class="btn-primary vam clearWidth" title="更多" id="btn-more">更多</a>
+												<div class="set-more">
+													<div id="more_list" class="more-list hiden">
+													    <ul>
+															<li id="goConFaq" class="bottom_border pop_up_dialog security-menu">遇到问题</li>
+														</ul>
+														<ul>
+															<li id="appealLink" class="bottom_border pop_up_dialog security-menu">更换手机号</li>
+														</ul>
+														<ul>
+															<li id="goSecurity" class="pop_up_dialog security-menu">安全中心</li>
+														</ul>
+													</div>
+												</div> 
+											</span>
+										</td>
+									</tr>
+									
+									<tr>
+										<td class="mt-links p0">
+											<div class="mt-links-float vam clearWidth">
+												 
+													
+														<span class="regist"><a class="btn-primary clearWidth" href="javascript:void(0)" onclick="gotoRegister()" title="注册帐号">注册帐号</a></span><span class="forgot"><a class="btn-primary clearWidth" href="javascript:void(0)" onclick="gotoresetpwd()" title="忘记密码？">忘记密码？</a></span>
+													
+													
+												
+											</div>
+										</td>
+									</tr>
+									
+									<tr>
+									    <td align="center">  
+									      	<div class="thirdLoginBlock">
+												
+													<div class="thirdLintTitle"><i class="line-left"></i><span class="third-tips">其他方式登录</span><i class="line-right rotateImg"></i></div>
+												  
+												<div class="thirdLoginDiv"><span class='qqLogin_bigIco' title="QQ" onclick='thirdAccountBind(this)'><a href="javascript:void(0);" toUrl='/qq/authorize'><s></s></a></span><span class='alipayLogin_bigIco' title="支付宝" onclick='thirdAccountBind(this)'><a href="javascript:void(0);" toUrl='/alipay/authorize'><s></s></a></span><span class='weixinLogin_bigIco' title="微信" onclick='thirdAccountBind(this)'><a href="javascript:void(0);" toUrl='/weixin/authorize'><s></s></a></span></div>
+											</div>			
+									    </td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+	
+							<div class="b-qrCode hiden">
+						
+					
+					<div class="qrCode-main">
+						<div  class="qrCode-content">
+							<div id="qrcodeImg">
+								  
+									    <div class="qrcode"></div>
+									  
+								<div class="qrcode-over-time">
+									<img src="https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;CAS&#x2f;up&#x2f;idmw_rss_38&#x2f;css&#x2f;portal&#x2f;vmall_rss&#x2f;loginEMUIV6&#x2f;img&#x2f;qrCode-over-time.png&#x3f;cas20190704">	
+									<div class="refush-content hiden">
+										<div class="des">二维码失效</div>
+										<div class="refush">刷新</div>
+									</div>
+									<div class="scan-success-content hiden">
+										<div class="scan-success-img"></div>
+										<div class="scan-success">扫码成功</div>
+									</div>
+								</div>									
+							</div>
+							<div class="qrCode-help"></div>
+						</div>
+					</div>				
+					<div class="qrCode-desc">
+						<p>使用<span class="haweiapp">华为移动服务APP</span>扫一扫</p>
+						<p>若您使用华为手机，请进入“设置”>“华为帐号”扫码登录。</p>
+					</div>
+					<div class="qrLogin-otherWayLink"></div>
+				</div>
+			
+		</div>
+		<div class="login-div smsValidateLogin containCollapseFix hidden">
+			<span class="changeLoginType callbackAcctLoginBtn" data-type="smsValidateLogin"><&nbsp;返回</span>
+			<div class="b-account">
+				<div class="login-form-marginTop smsLogin-form">
+					<div class="form-edit-area loginEventForm">
+						<div class="smsValidateLogin-errorTipsDiv"></div>
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr >
+									<td class="user-input-tr chooseCountryTD">
+										<!-- 国家/地区-->
+										<div class="l" id="chooseCountry">
+											<div id="smsLoginCountryCodeDiv"><input id="smsLoginCountryCodeInput" value="" type="hidden" /></div>
+										</div><div class="splitLine l">
+										</div><div class="overFlowHidden">
+											<input type="text" autocomplete="off"  class="text vam" id="login_phoneNum" name="userAccount" maxlength="50" tabindex="1" />
+										</div>
+									</td>
+								</tr>
+								
+								<!-- 图形验证码 -->
+								  
+												
+								<tr>
+									<td class="referenceTarget user-input-tr"><input type="text" autocomplete="off"  class="text vam" id="smsAuthCode" name="smsAuthCode" maxlength="8" tabindex="3" /><div id="getSmsRandomCodeDiv"><div id="getSmsRandomCode" intervaltime="60" class="smsAuthBth btnUnable"><span>获取验证码</span><div id="smsAuthCodeTips"></div></div></div></td>
+								</tr>
+								
+								<tr>
+									<td class="mt-checkbox">
+										<span id="sms-rememberNameSpan"><input type="checkbox" class="checkbox vam" id="remember_smsName" name="remember_smsName" tabindex="4" /><label for="remember_smsName"><i  id="remember_smsName_icon" class="checkBox-icon tick-off-icon marginR6"></i>记住华为帐号</label></span>
+										<div class="hidden remeberTip"></div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div style="margin-bottom:0px;"><span class="vam error" id="login_msg"  style="display:block"></span></div>
+										<div class="button-login" id="btnSMSLogin" data-type="smsLogin" tabindex="5">登录</div>
+									</td>
+								</tr>
+								
+							</tbody>
+						</table>
+					</div>
+				</div>						
+			</div>
+		</div> 
+	</div>
+
+	<div id="layer">
+		<div class="mc"></div>
+	</div>
+
+	<div id="selectCountryCodeDiv"></div>
+	<div class="loginmask">
+		<div>
+			<span>登录中...</span>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+
+	var localInfo={
+			thirdLoginUrlAddrass:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;CAS"),
+			authCodeValidate:htmlDecodeJQ(""),
+			webssoLoginSessionCode:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;Captcha&#x2f;authCodeImage&#x3f;session_code_key&#x3d;login_session_ramdom_code_key"),
+			webssoSMSLoginSessionCode:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;Captcha&#x2f;authCodeImage&#x3f;session_code_key&#x3d;sms_login_session_ramdom_code_key"),
+			findPwd:htmlDecodeJQ("https://id1.cloud.huawei.com/AMW/portal/resetPwd/forgetbyid.html" ),
+			submit:htmlDecodeJQ("true"),
+			loginUrl:htmlDecodeJQ("https://id1.cloud.huawei.com/CAS/portal/login.html"),
+			service:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;www.vmall.com&#x2f;account&#x2f;caslogin&#x3f;url&#x3d;https&#x25;3A&#x25;2F&#x25;2Fwww.vmall.com&#x25;2Faccount&#x25;2FupCallback.html&#x25;3FfunName&#x25;3Dcallback1565663256585&#x25;26prePage&#x25;3Dhttps&#x25;25253A&#x25;25252F&#x25;25252Fwww.vmall.com&#x25;25252F"),
+			loginChannel:htmlDecodeJQ("26000000"),
+			urlCountryCode:htmlDecodeJQ("cn"),
+			reqClientType:htmlDecodeJQ("26"),
+			adUrl:htmlDecodeJQ(""),
+			lang:htmlDecodeJQ("zh-cn"),
+			inviterUserID:htmlDecodeJQ(""),
+			inviter:htmlDecodeJQ(""),
+			userID:htmlDecodeJQ(""),
+			emailPng:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;CAS&#x2f;up&#x2f;idmw_rss_38&#x2f;css&#x2f;portal&#x2f;register_rss&#x2f;red&#x2f;images&#x2f;email-imp.png&#x3f;cas20190704"),
+			cookiePrivacyPolicyUrl:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;CAS&#x2f;portal&#x2f;agreements&#x2f;cookiePrivacyPolicy&#x2f;zh-cn_cookiePrivacyPolicy.html"),
+			bgImgUrl:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;CAS&#x2f;up&#x2f;idmw_rss_38&#x2f;ads&#x2f;login_default_bg.png"),
+			currentSiteID:htmlDecodeJQ("1"),
+			quickAuth:htmlDecodeJQ("false"),
+			newsign:htmlDecodeJQ(""),
+			cookiePrivateAgreement:htmlDecodeJQ("false"),
+			globalCrossPrivacyPolicy:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;AMW&#x2f;portal&#x2f;agreements&#x2f;userPrivacyPolicy&#x2f;zh-cn_userPrivacyPolicy.html&#x3f;reqClientType&#x3d;26&amp;version&#x3d;europe"),
+			queryString:htmlDecodeJQ("&#x3f;reqClientType&#x3d;26&amp;loginChannel&#x3d;26000000&amp;countryCode&#x3d;cn&amp;loginUrl&#x3d;https&#x25;3A&#x25;2F&#x25;2Fid1.cloud.huawei.com&#x25;2FCAS&#x25;2Fportal&#x25;2Flogin.html&amp;service&#x3d;https&#x25;3A&#x25;2F&#x25;2Fwww.vmall.com&#x25;2Faccount&#x25;2Fcaslogin&#x25;3Furl&#x25;3Dhttps&#x25;253A&#x25;252F&#x25;252Fwww.vmall.com&#x25;252Faccount&#x25;252FupCallback.html&#x25;253FfunName&#x25;253Dcallback1565663256585&#x25;2526prePage&#x25;253Dhttps&#x25;2525253A&#x25;2525252F&#x25;2525252Fwww.vmall.com&#x25;2525252F&amp;lang&#x3d;zh-cn&amp;themeName&#x3d;red"),
+			requestURIQuery:htmlDecodeJQ("&#x2f;CAS&#x2f;portal&#x2f;ifmLogin.html&#x3f;reqClientType&#x3d;26&amp;loginChannel&#x3d;26000000&amp;countryCode&#x3d;cn&amp;loginUrl&#x3d;https&#x25;3A&#x25;2F&#x25;2Fid1.cloud.huawei.com&#x25;2FCAS&#x25;2Fportal&#x25;2Flogin.html&amp;service&#x3d;https&#x25;3A&#x25;2F&#x25;2Fwww.vmall.com&#x25;2Faccount&#x25;2Fcaslogin&#x25;3Furl&#x25;3Dhttps&#x25;253A&#x25;252F&#x25;252Fwww.vmall.com&#x25;252Faccount&#x25;252FupCallback.html&#x25;253FfunName&#x25;253Dcallback1565663256585&#x25;2526prePage&#x25;253Dhttps&#x25;2525253A&#x25;2525252F&#x25;2525252Fwww.vmall.com&#x25;2525252F&amp;lang&#x3d;zh-cn&amp;themeName&#x3d;red"),
+			accountSiteID:htmlDecodeJQ("1"),
+			bizIfmUrl:htmlDecodeJQ( ""),
+			msgDialogStyle:htmlDecodeJQ( "dialog"),
+			successImgPath:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;CAS&#x2f;up&#x2f;idmw_rss_38&#x2f;css&#x2f;portal&#x2f;common_rss&#x2f;images&#x2f;suc.png&#x3f;cas20190704"),
+			representationLink:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;AMW&#x2f;portal&#x2f;appealSelf&#x2f;applyChangeAccount.html&#x3f;reqClientType&#x3d;26&amp;loginChannel&#x3d;26000000&amp;countryCode&#x3d;cn&amp;loginUrl&#x3d;https&#x25;3A&#x25;2F&#x25;2Fid1.cloud.huawei.com&#x25;2FCAS&#x25;2Fportal&#x25;2Flogin.html&amp;service&#x3d;https&#x25;3A&#x25;2F&#x25;2Fwww.vmall.com&#x25;2Faccount&#x25;2Fcaslogin&#x25;3Furl&#x25;3Dhttps&#x25;253A&#x25;252F&#x25;252Fwww.vmall.com&#x25;252Faccount&#x25;252FupCallback.html&#x25;253FfunName&#x25;253Dcallback1565663256585&#x25;2526prePage&#x25;253Dhttps&#x25;2525253A&#x25;2525252F&#x25;2525252Fwww.vmall.com&#x25;2525252F&amp;lang&#x3d;zh-cn&amp;themeName&#x3d;red&amp;refererPage&#x3d;login"),
+			isOpenApealSelf:htmlDecodeJQ("true"),
+			extInfo:htmlDecodeJQ(""),
+			isCurSiteOpenDeviceFinger:htmlDecodeJQ("true"),
+			rememberAccount:htmlDecodeJQ( ""),
+			loginSMSNum:htmlDecodeJQ( ""),
+			eyeoff:htmlDecodeJQ("https://id1.cloud.huawei.com/CAS/up/idmw_rss_38/css/portal/vmall_rss/images/eyeoff.png?cas20190704"),
+			eyeon:htmlDecodeJQ( "https://id1.cloud.huawei.com/CAS/up/idmw_rss_38/css/portal/vmall_rss/images/eyeon.png?cas20190704"),
+			formatNo:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;CAS&#x2f;up&#x2f;idmw_rss_38&#x2f;css&#x2f;portal&#x2f;vmall_rss&#x2f;images&#x2f;format_no.png&#x3f;cas20190704"),
+			isOpenLocalCacheRisk:htmlDecodeJQ("false"),
+			displayCaptchaType:htmlDecodeJQ("1"),
+			formatOk:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;CAS&#x2f;up&#x2f;idmw_rss_38&#x2f;css&#x2f;portal&#x2f;vmall_rss&#x2f;images&#x2f;format_ok.png&#x3f;cas20190704"),
+			maxTimeDev:htmlDecodeJQ("1"),
+			maxCountDev:htmlDecodeJQ("4"),
+			recoverTimeDev:htmlDecodeJQ("30"),
+			maxTimePhone:htmlDecodeJQ("1"),
+			maxCountPhone:htmlDecodeJQ("4"),
+			recoverTimePhone:htmlDecodeJQ("30"),
+			maxTimeEmail:htmlDecodeJQ("1"),
+			maxCountEmail:htmlDecodeJQ("4"),
+			normalLoginTooManyTimes:htmlDecodeJQ(false),
+			lastInputAccount:htmlDecodeJQ(""),
+			curInputAccount:htmlDecodeJQ(""),
+			curAccountSiteID:htmlDecodeJQ(""),
+			recoverTimeEmail:htmlDecodeJQ("30"),
+			agree_DFVersion_cliagree:htmlDecodeJQ("&#x70b9;&#x51fb;&#x540c;&#x610f;&#xff0c;&#x5373;&#x8868;&#x793a;&#x60a8;&#x540c;&#x610f;&#x4e0a;&#x8ff0;&#x5185;&#x5bb9;&#x53ca;&lt;a&#x20;href&#x3d;&quot;https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;AMW&#x2f;portal&#x2f;agreements&#x2f;userAgreement&#x2f;zh-cn_userAgreement.html&#x3f;version&#x3d;china&amp;reqClientType&#x3d;26&quot;&#x20;target&#x3d;&quot;_blank&quot;&#x20;class&#x3d;&quot;loginAndRegLink&quot;&gt;&#x534e;&#x4e3a;&#x5e10;&#x53f7;&#x7528;&#x6237;&#x534f;&#x8bae;&lt;&#x2f;a&gt;&#x5e76;&#x786e;&#x8ba4;&#x60a8;&#x5df2;&#x9605;&#x8bfb;&lt;a&#x20;href&#x3d;&quot;https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;AMW&#x2f;portal&#x2f;agreements&#x2f;userPrivacyPolicy&#x2f;zh-cn_userPrivacyPolicy.html&quot;&#x20;target&#x3d;&quot;_blank&quot;&#x20;class&#x3d;&quot;loginAndRegLink&quot;&gt;&#x534e;&#x4e3a;&#x9690;&#x79c1;&#x653f;&#x7b56;&lt;&#x2f;a&gt;&#x3002;"),
+			isOpenDimensionalCode:htmlDecodeJQ("true"),
+			onlyDimensionalCode:htmlDecodeJQ("false"),
+			getqrURL:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;DimensionalCode&#x2f;getqrWeb&#x3f;appID&#x3d;com.huawei.hwidweb&amp;loginChannel&#x3d;7000700&amp;reqClientType&#x3d;700&amp;confirmFlag&#x3d;1&amp;version&#x3d;27120"),
+			asyncURL:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;DimensionalCode&#x2f;async&#x3f;version&#x3d;27120"),
+			postRemoteLogin:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;CAS&#x2f;stRemoteLogin"),
+			getqrContent:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;DimensionalCode&#x2f;getqrInfo&#x3f;appID&#x3d;com.huawei.hwidweb&amp;loginChannel&#x3d;7000700&amp;reqClientType&#x3d;700&amp;confirmFlag&#x3d;1&amp;version&#x3d;27120"),
+			createQrCodeType:htmlDecodeJQ("0"),
+			isIfmLogin:htmlDecodeJQ(true),
+			regseterLink:htmlDecodeJQ("https://id1.cloud.huawei.com/CAS/portal/userRegister/ifmRegbyphone.html?reqClientType=26&loginChannel=26000000&countryCode=cn&loginUrl=https%3A%2F%2Fid1.cloud.huawei.com%2FCAS%2Fportal%2Flogin.html&service=https%3A%2F%2Fwww.vmall.com%2Faccount%2Fcaslogin%3Furl%3Dhttps%253A%252F%252Fwww.vmall.com%252Faccount%252FupCallback.html%253FfunName%253Dcallback1565663256585%2526prePage%253Dhttps%2525253A%2525252F%2525252Fwww.vmall.com%2525252F&lang=zh-cn&themeName=red"),
+			resetPwdLink:htmlDecodeJQ("?reqClientType=26&loginChannel=26000000&countryCode=cn&loginUrl=https%3A%2F%2Fid1.cloud.huawei.com%2FCAS%2Fportal%2Flogin.html&service=https%3A%2F%2Fwww.vmall.com%2Faccount%2Fcaslogin%3Furl%3Dhttps%253A%252F%252Fwww.vmall.com%252Faccount%252FupCallback.html%253FfunName%253Dcallback1565663256585%2526prePage%253Dhttps%2525253A%2525252F%2525252Fwww.vmall.com%2525252F&lang=zh-cn&themeName=red"),
+			isOpenSMSLogin:htmlDecodeJQ("true"),
+			randomCodeImgLoading:htmlDecodeJQ("https://id1.cloud.huawei.com/CAS/up/idmw_rss_38/css/mobile/images/loading.gif?cas20190704"),
+			isOpenImgCode:htmlDecodeJQ("false"),
+			agree_DFVersion_Content1_info1:htmlDecodeJQ("&#x4e3a;&#x9632;&#x6b62;&#x6b3a;&#x8bc8;&#x884c;&#x4e3a;&#xff0c;&#x534e;&#x4e3a;&#x9700;&#x91c7;&#x96c6;&#x6d4f;&#x89c8;&#x5668;&#x4fe1;&#x606f;&#x20;&#x28;&#x7c7b;&#x578b;&#x3001;&#x65f6;&#x533a;&#x3001;&#x63d2;&#x4ef6;&#x3001;&#x8bed;&#x8a00;&#x3001;&#x5b57;&#x4f53;&#x3001;canvas&#x56fe;&#x7247;&#x6e32;&#x67d3;&#x54c8;&#x5e0c;&#x503c;&#x3001;webgl&#x56fe;&#x7247;&#x6e32;&#x67d3;&#x54c8;&#x5e0c;&#x503c;&#x29;&#xff1b;&#x767b;&#x5f55;&#x5f02;&#x5e38;&#x65f6;&#xff0c;&#x534e;&#x4e3a;&#x9700;&#x91c7;&#x96c6;&#x56fe;&#x7247;&#x9a8c;&#x8bc1;&#x7801;&#x9875;&#x9762;&#x7684;&#x9f20;&#x6807;&#x6216;&#x5c4f;&#x5e55;&#x6ed1;&#x52a8;&#x4fe1;&#x606f;&#xff0c;&#x4ee5;&#x9a8c;&#x8bc1;&#x8eab;&#x4efd;&#x3002;&lt;div&#x20;class&#x3d;&quot;DFVersion-EMUI6&quot;&gt;&#x534e;&#x4e3a;&#x6536;&#x96c6;&#x3001;&#x4f7f;&#x7528;&#x4fe1;&#x606f;&#x7684;&#x8be6;&#x60c5;&#x8bf7;&#x89c1;&lt;a&#x20;href&#x3d;&quot;https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;AMW&#x2f;portal&#x2f;agreements&#x2f;accPrivacyStatement&#x2f;zh-cn_accPrivacyStatement.html&#x3f;version&#x3d;china&amp;reqClientType&#x3d;26&quot;&#x20;target&#x3d;&quot;_blank&quot;&#x20;class&#x3d;&quot;DFVersion-link-EMUI6&quot;&gt;&#x5173;&#x4e8e;&#x534e;&#x4e3a;&#x5e10;&#x53f7;&#x4e0e;&#x9690;&#x79c1;&#x7684;&#x58f0;&#x660e;&lt;&#x2f;a&gt;&#x3002;&lt;&#x2f;div&gt;"),
+			agree_DFVersion_Content4:htmlDecodeJQ("&#x70b9;&#x51fb;&ldquo;&#x540c;&#x610f;&rdquo;&#xff0c;&#x5373;&#x8868;&#x793a;&#x60a8;&#x540c;&#x610f;&#x4e0a;&#x8ff0;&#x5185;&#x5bb9;&#x53ca;&lt;a&#x20;href&#x3d;&quot;https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;AMW&#x2f;portal&#x2f;agreements&#x2f;userAgreement&#x2f;zh-cn_userAgreement.html&#x3f;version&#x3d;china&amp;reqClientType&#x3d;26&quot;&#x20;target&#x3d;&quot;_blank&quot;&#x20;class&#x3d;&quot;DFVersion-link-EMUI6&quot;&gt;&#x534e;&#x4e3a;&#x5e10;&#x53f7;&#x7528;&#x6237;&#x534f;&#x8bae;&lt;&#x2f;a&gt;&#x3002;"),
+			regseterLink:htmlDecodeJQ("https://id1.cloud.huawei.com/CAS/portal/userRegister/ifmRegbyphone.html?reqClientType=26&loginChannel=26000000&countryCode=cn&loginUrl=https%3A%2F%2Fid1.cloud.huawei.com%2FCAS%2Fportal%2Flogin.html&service=https%3A%2F%2Fwww.vmall.com%2Faccount%2Fcaslogin%3Furl%3Dhttps%253A%252F%252Fwww.vmall.com%252Faccount%252FupCallback.html%253FfunName%253Dcallback1565663256585%2526prePage%253Dhttps%2525253A%2525252F%2525252Fwww.vmall.com%2525252F&lang=zh-cn&themeName=red"),
+			curSiteSupportSMSLoginSites: htmlDecodeJQ("1,7,8,5"),
+			illnessOptype:1,
+			faqLink:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;AMW&#x2f;portal&#x2f;faq&#x2f;zh-cn_faq.html&#x3f;version&#x3d;china&amp;countryCode&#x3d;cn&amp;lang&#x3d;zh-cn&amp;reqClientType&#x3d;26"),
+			accountChangeLink:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;AMW&#x2f;portal&#x2f;appealSelf&#x2f;applyChangeAccount.html&#x3f;reqClientType&#x3d;26&amp;loginChannel&#x3d;26000000&amp;countryCode&#x3d;cn&amp;loginUrl&#x3d;https&#x25;3A&#x25;2F&#x25;2Fid1.cloud.huawei.com&#x25;2FCAS&#x25;2Fportal&#x25;2Flogin.html&amp;service&#x3d;https&#x25;3A&#x25;2F&#x25;2Fwww.vmall.com&#x25;2Faccount&#x25;2Fcaslogin&#x25;3Furl&#x25;3Dhttps&#x25;253A&#x25;252F&#x25;252Fwww.vmall.com&#x25;252Faccount&#x25;252FupCallback.html&#x25;253FfunName&#x25;253Dcallback1565663256585&#x25;2526prePage&#x25;253Dhttps&#x25;2525253A&#x25;2525252F&#x25;2525252Fwww.vmall.com&#x25;2525252F&amp;lang&#x3d;zh-cn&amp;themeName&#x3d;red&amp;refererPage&#x3d;login"),
+			defaultAvatar: htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;CAS&#x2f;up&#x2f;idmw_rss_38&#x2f;css&#x2f;mobile&#x2f;images&#x2f;ic_list_account_48-48.png&#x3f;cas20190704"),
+			secCodeAndSecondLoginFaqUrl:htmlDecodeJQ("https&#x3a;&#x2f;&#x2f;id1.cloud.huawei.com&#x2f;AMW&#x2f;portal&#x2f;faq&#x2f;zh-cn_secCodeAndSecondLoginFaq.html&#x3f;countryCode&#x3d;cn&amp;lang&#x3d;zh-cn&amp;reqClientType&#x3d;26"),
+			clientID:htmlDecodeJQ(""),
+			ageLimit:htmlDecodeJQ("")*1,
+			webUrl:htmlDecodeJQ("https://id1.cloud.huawei.com/CAS/up/idmw_rss_38")
+	};
+
+	
+</script>
+
+<script src="https://id1.cloud.huawei.com/CAS/up/idmw_rss_38/js/pc_rss/secrisk/swfobject.js?cas20190704" type="text/javascript"></script>
+
+<script src="https://id1.cloud.huawei.com/CAS/up/idmw_rss_38/js/pc_rss/secrisk/acctguard-secure.min.js?cas20190704" type="text/javascript"></script>
+
+<script src="https://id1.cloud.huawei.com/CAS/up/idmw_rss_38/js/compress/_portal_login_cloudIframeLoginV3.js?cas20190704" type="text/javascript"></script>
+
+</html>
