@@ -16,5 +16,8 @@
 
 页面搭建：
 注意首页版心为1200px
-所有人写img时，要按照以下格式写将原来的src属性该为originalSrc，在页面加载后自动变回src,从而能够实现图片懒加载。
+所有人写img时，要按照以下格式写，将原来的src属性该为originalSrc，在页面加载后自动变回src,从而能够实现图片懒加载。
 <img originalSrc="./images/brand1.png"/>
+
+github提交地址：
+https://github.com/Milk630/pro1.git

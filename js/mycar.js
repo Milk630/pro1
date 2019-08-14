@@ -1,12 +1,5 @@
-$(function () {
-
-    /*语法：$().load()*/
-    /*备注1：默认发送的是GET请求，如果提交参数(对象)POST请求*/
-    /*备注2：*/
-//  $("#foot").load("./header.html");
-//  $("#foot").load("./footer.html");
-    /* 懒加载*/
-    $("img").delayLoading({
+ $(function(){
+ 	$("img").delayLoading({
         defaultImg: "./images/mask.png",  // 预加载前显示的图片
         errorImg: "",                      // 读取图片错误时替换图片(默认：与defaultImg一样)
         imgSrcAttr: "originalSrc",         // 记录图片路径的属性(默认：originalSrc，页面img的src属性也要替换为originalSrc)
@@ -17,4 +10,4 @@ $(function () {
         success: function (imgObj) { },    // 加载图片成功后的回调函数(默认：不执行任何操作)
         error: function (imgObj) { }       // 加载图片失败后的回调函数(默认：不执行任何操作)
     });
-})
+ });

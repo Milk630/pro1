@@ -1,0 +1,256 @@
+.car-header{
+	height: 70px;
+	background: #fff;
+	overflow: hidden;
+}
+.car-header>.inner{
+	margin: 9px auto;
+	width: 1200px;
+	height: 52px;
+	background: #fff;
+	overflow: hidden;
+}
+.car-header>.inner>a{
+	float:left;
+	width: 120px;
+	height: 36px;
+	margin-top: 8px;
+	vertical-align: top;/*去掉img的默认样式*/
+}
+.car-header>.inner>a>img{
+	width: 120px;
+	height: 36px;
+}
+.car-header>.inner>.header-name{
+	float:left;
+	font-size: 22px;
+	margin-left: 30px;
+	line-height: 52px;
+}
+.car-header>.inner>.header-line{
+	position: relative;
+	float:right;
+	width: 320px;
+	height: 50px;
+	background: #fff;
+	margin-top: 1px;
+	overflow: hidden;
+}
+.car-header>.inner>.header-line>.line{
+	display: block;
+	width: 242px;
+	height: 1px;
+	background: #D9D9D9;
+	margin: 20px 20px 0;
+}
+.car-header>.inner>.header-line>.line>.radius{
+	position: relative;
+	float:left;
+	width: 7px;
+	height: 7px;
+	border-radius: 3.5px;
+	background: #D9D9D9;
+	margin: -3.5px 0 0 106px;
+}
+.car-header>.inner>.header-line>.line>.first{
+	background: #fff;
+	width: 16px;
+	height: 16px;
+	background: #666;
+	border-radius: 8px;
+	margin-left: 0;
+	margin-top: -8px;
+}
+/*小圆点外圈圆*/
+.car-header>.inner>.header-line>.line>.radius>.big-radius{
+	position: absolute;
+	top: 4.5px;
+	left: 4.5px;
+	width: 6px;
+	height: 6px;
+	border-radius: 3px;
+	background: #fff;
+}
+.car-header>.inner>.header-line .title{
+	position: absolute;
+	bottom:0px;
+    left: 0px;
+}
+.car-header>.inner>.header-line .radius-title{
+	font-size: 12px;
+	float: left;
+	margin-left: 50px;
+	color:#D9D9D9;
+}
+.car-header>.inner>.header-line .first{
+	margin-left: 2px;
+	color:#000;
+}
+/*主体*/
+.main{
+	width: 100%;
+	background: #f5f5f5;
+	overflow: hidden;
+	/*min-height: 1000px;*/
+}
+/*设置版心,只要加上此class宽度自动变为1200px*/
+.inner{
+	width: 1200px;
+	margin: 0 auto;
+	/*overflow: hidden;*/
+}
+.login-info{
+	margin-top: 10px;
+	height: 48px;
+	background: #fffdee;
+	border: 1px solid #eace85;
+}
+.login-info .login-detail{
+	margin-left:20px;
+	line-height: 48px;
+	color: #ca141d;
+	font-size: 12px;
+}
+.login-info .login-detail img{
+	vertical-align: top;
+	margin-top: 18px;
+}
+.login-info a{
+	display: inline-block;
+	height: 30px;
+	width: 70px;
+	background: #ca141d;
+	color: #FFF;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	margin-left: 10px;
+}
+/*购物车标题*/
+.main .title{
+	height: 40px;
+	margin-top: 20px;
+	background: #fff;
+	font-size: 12px;
+	color: #a4a4a4;
+}
+input[type=checkbox]{
+	float: left;
+	width: 14px;
+	height: 14px;
+	border-radius: 0;
+	box-shadow: none;
+	border: 0 none;
+	margin-top: 13px;
+}
+.main .title input{
+	margin-left: 40px;
+}
+.main .title label{
+	float: left;
+	padding-top: 13px;
+	padding-left: 10px;
+	padding-right: 100px;
+}
+.title-right{
+	float: right;
+}
+.main .title span{
+	line-height: 40px;
+}
+.main .title .span1{
+	float: left;
+	
+}
+.main .title .span2{
+	float: left;
+	margin-right: 80px;
+}
+.product .product-detail{
+	margin: 10px auto 0px;
+	width: 1160px;
+	/*min-height: 252px;*/
+	height: 130px;
+	padding-left: 40px;
+	padding-top: 20px;
+	background: #fff;
+	border-bottom: 1px solid #eaeaea;
+}
+.product .product-addtional{
+	min-height: 394px;
+	background: #fff;
+}
+.pro-main{
+	width: 1130px;
+	height: 100px;
+	margin-bottom:18px;
+	font-size: 14px;
+}
+.pro-server{
+	background: #f5f5f5;
+	width: 1090px;
+	height: 114px;
+	margin-left: 5px;
+}
+.pro-main img{
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+.pro-data{
+	margin-top: 5px;
+	margin-left: 20px;
+	float: left;
+	width: 970px;
+	height: 48px;
+	/*border: 1px solid red;*/
+}
+.pro-data .pro-name{
+	float: left;
+	width: 450px;
+	height: 42px;
+	/*word-break: break-oall;*/
+	color:#3a3a3a;
+}
+.pro-data ul{
+	float: right;
+}
+.pro-data ul li{
+	float: left;
+	font-size: 14px;
+	margin: 0 20px;
+}
+.num{
+	float: left;
+	width: 44px;
+	height: 20px;
+	border:1px solid #d6d6d6;
+	outline: none;
+	text-align: center;
+	border-left: 0;
+	border-right: 0;
+}
+.pro-data ul .per-price{
+	margin-right: 10px;
+	color: #3a3a3a;
+}
+.pro-data ul .num-li{
+	margin-right: 4px;
+}
+.num-li a{
+	line-height: 20px;
+	font-size: 16px;
+	width: 22px;
+	height: 20px;
+	float: left;
+	border: 1px solid #d6d6d6;
+	text-align: center;
+}
+.pro-data ul .small-totall{
+	margin-right: 30px;
+	color: #ca141d;
+	font-weight: 700;
+}
+.pro-data ul .pro-del{
+	color: #a4a4a4;
+}
