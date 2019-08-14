@@ -1,0 +1,62 @@
+[
+	[
+		{"src":"./images/sj1.png","name":"荣耀"},
+		{"src":"./images/sj2.png","name":"HUAWEI P系列"},
+		{"src":"./images/sj3.png","name":"HUAWEI mate系列"},
+		{"src":"./images/sj4.png","name":"荣耀畅玩系列"},
+		{"src":"./images/sj5.png","name":"HUAWEI nova系列"},
+		{"src":"./images/sj6.png","name":"华为畅享系列"},
+		{"src":"./images/sj7.png","name":"HUAWEI 麦芒系列"},
+		{"src":"./images/sj8.png","name":"移动4G+专区"}
+	],
+	[
+		{"src":"./images/bjb1.png","name":"平板电脑"},
+		{"src":"./images/bjb2.png","name":"笔记本电脑"},
+		{"src":"./images/bjb3.png","name":"笔记本配件"}
+	],
+	[
+		{"src":"./images/zn1.png","name":"手环"},
+		{"src":"./images/zn2.png","name":"手表"},
+		{"src":"./images/zn3.png","name":"VR"}
+	],
+	[
+		{"src":"./images/zh1.png","name":"智慧屏"},
+		{"src":"./images/zh2.png","name":"路由器"},
+		{"src":"./images/zh3.png","name":"照明"},
+		{"src":"./images/zh4.png","name":"电视盒子"},
+		{"src":"./images/zh5.png","name":"清洁"},
+		{"src":"./images/zh6.png","name":"之母/分式路由"},
+		{"src":"./images/zh7.png","name":"电力猫/wifi放大器"},
+		{"src":"./images/zh8.png","name":"移动路由"},
+		{"src":"./images/zh9.png","name":"节能"},
+		{"src":"./images/zh10.png","name":"环境"},
+		{"src":"./images/zh11.png","name":"安防"},
+		{"src":"./images/zh12.png","name":"健康"},
+		{"src":"./images/zh13.png","name":"厨电"},
+		{"src":"./images/zh14.png","name":"影音"},
+		{"src":"./images/zh15.png","name":"卫浴"}
+	],
+	[
+		{"src":"./images/rx1.png","name":"保护壳"},
+		{"src":"./images/rx2.jpg","name":"移动电源"},
+		{"src":"./images/rx3.png","name":"耳机"},
+		{"src":"./images/rx4.png","name":"保护套"},
+		{"src":"./images/rx5.png","name":"贴膜"},
+		{"src":"./images/rx6.png","name":"音箱"},
+		{"src":"./images/rx7.png","name":"自拍杆/支架"},
+		{"src":"./images/rx8.png","name":"充电器/线材"},
+		{"src":"./images/rx9.png","name":"U盘/储存卡"},
+		{"src":"./images/rx10.png","name":"摄像机/镜头"},
+		{"src":"./images/rx11.png","name":"智能硬件"},
+		{"src":"./images/rx12.png","name":"表带"},
+		{"src":"./images/rx13.png","name":"生活周边"},
+		{"src":"./images/rx14.png","name":"盒子专属配件"},
+		{"src":"./images/rx15.png","name":"触控笔/取卡针"}
+	],
+	[
+		{"src":"./images/zz1.png","name":"服务器"},
+		{"src":"./images/zz2.png","name":"增值卡"},
+		{"src":"./images/zz3.png","name":"AI 计算平台"},
+		{"src":"./images/zz4.png","name":"电池服务"}
+	]
+]

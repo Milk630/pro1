@@ -78,6 +78,8 @@
 				$this.executeScript(content);
 				parent.removeChild(this);
 				//替换元素 this.parentNode.replaceChild(includeNodes[1], this);
+				banner();//运行banner
+				hungBar();//运行滑块
 			})
 		}
 	}
